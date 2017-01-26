@@ -17,9 +17,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+//Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
+
+//Background Gradient
 
 .home-callout, .navbar {
   //Gradient provided by @_ighash at uiGradients.com//
@@ -27,7 +30,7 @@ h1, h2, h3 {
   background: -webkit-linear-gradient(to left, #00C9FF , #92FE9D); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #00C9FF , #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+//Homepage styles 
 .home-callout {
   //Aligning home callout with Navbar //
   margin-top: -20px;
@@ -36,28 +39,19 @@ h1, h2, h3 {
   color: #FFF;
 }
 
+//Nav styles
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  //Level required to change text was more specific due to how bootstrap is set up.//
-  //Identified the appropriate level in the Chrome inspector //
-  color: #FFF;
-}
-
-.navbar-default .navbar-brand:hover {
-  //Level required to change text was more specific due to how bootstrap is set up.//
-  //Identified the appropriate level in the Chrome inspector //
-  color: #FFF;
-  opacity: 0.75;
-}
-
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
+  //Level required to change text was more specific due to how bootstrap is set up.//
+  //Identified the appropriate level in the Chrome inspector //
   color: #FFF;
+  &:hover {
+    color: #FFF;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-  color: #FFF;
-  opacity: 0.75;
-}
