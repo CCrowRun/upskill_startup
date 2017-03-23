@@ -20,6 +20,12 @@ class ProfilesController < ApplicationController
     end
   end
   
+  #GET to /users/:user_id/profile/edit(.format)
+  def edit
+    @user = User.find( params[:user_id] )
+    @profile = @user.profile
+  end
+  
   #White list flieds for the controller
   private
   def profile_params
