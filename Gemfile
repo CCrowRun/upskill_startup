@@ -2,15 +2,18 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0'
+gem 'rails', '6.0.3.1'
+# Added when upgrading Rails Version
+gem 'railties', '~> 6.0', '>= 6.0.3.1'
+gem 'activesupport', '~> 6.0', '>= 6.0.3.1'
 # Use Puma as the app server
-gem 'puma', '3.4.0'
+gem 'puma'
 # Use SCSS for stylesheets
-gem 'sass-rails', '5.0.6'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.0.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.2.1'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -19,11 +22,11 @@ gem 'jquery-rails', '4.1.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '2.5.0'
+gem 'jbuilder'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '3.1.7'
+gem 'bcrypt', '3.1.13'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -38,7 +41,7 @@ gem 'font-awesome-sass', '4.6.2'
 gem 'hirb', '0.7.3'
 
 #Use Devise for user authentication
-gem 'devise', '4.2.0'
+gem 'devise'
 
 #Use Stripe for payment processing
 gem 'stripe', '1.48.0'
@@ -64,9 +67,9 @@ end
 
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.18.4'
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-ruby '2.3.0'
+ruby '2.7.1'
