@@ -32,7 +32,7 @@ gem 'bcrypt', '3.1.13'
 # gem 'capistrano-rails', group: :development
 
 #Gem adding the Bootstrap framework
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 
 #Gem adding Font Awesome Sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
