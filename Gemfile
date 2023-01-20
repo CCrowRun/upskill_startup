@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0.3.1'
+gem 'rails', '7.0.4.1'
 # Added when upgrading Rails Version
-gem 'railties', '~> 6.0', '>= 6.0.3.1'
-gem 'activesupport', '~> 6.0', '>= 6.0.3.1'
+gem 'railties', '~> 7.0'
+gem 'activesupport', '~> 7.0'
 # Use Puma as the app server
 gem 'puma'
 # Use SCSS for stylesheets
@@ -18,7 +18,7 @@ gem 'coffee-rails'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '4.1.1'
+gem 'jquery-rails', '4.5.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -47,7 +47,7 @@ gem 'devise'
 gem 'stripe', '1.48.0'
 
 #Use Figaro for ENV Variables
-gem 'figaro', '1.1.1'
+gem 'figaro', '1.2.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
